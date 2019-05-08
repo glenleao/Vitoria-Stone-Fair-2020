@@ -1,0 +1,344 @@
+/*
+Theme Name: VSF2020 
+Author: Glen Leão
+Author URI: https://github.com/glenleao
+Description: Vitoria Stone Fair / Marmomac Latin America 2020
+Version: 1.0
+Text Domain: vsf2020
+*/
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300; }
+
+.topo {
+  margin-top: 0;
+  height: 40px;
+  background: #398485; }
+
+.topo a {
+  color: #fff; }
+
+.topo a:hover {
+  color: #d4eada;
+  text-decoration: none; }
+
+.social ul li {
+  display: inline;
+  margin-left: 5px; }
+
+.social-2 ul li {
+  display: inline;
+  margin-left: 5px;
+  margin-bottom: 2px; }
+
+/*navegacao*/
+/*navbar*/
+/*.navbar-ontop {
+  opacity: 0 !important; }*/
+.fixed-top {
+  position: fixed;
+  top: 40px;
+  /* right: 0;
+    left: 0;*/
+  z-index: 1030; }
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    margin-right: .1rem; } }
+
+/*.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity .5s ease-out; }
+*/
+.jumbotron {
+  height: 35vh; }
+
+.jumbotron.barra {
+  border-bottom: 6px solid #398485; }
+
+.botao {
+  padding: 22px;
+  border-radius: 6px;
+  font-family: Rubik;
+  margin-bottom: 0.85rem; }
+
+.botao a {
+  text-decoration: none;
+  color: #fff; }
+
+.botao h1 {
+  padding-top: 0.75rem; }
+
+.expositor {
+  background: #033B4E; }
+
+.visitante {
+  background: #2c5639; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  overflow: hidden;
+  transition: .5s ease;
+  width: 0;
+  height: 100%;
+  border-radius: 65px 0 65px 0; }
+
+.con {
+  position: relative;
+  width: 100%; }
+
+.con:hover .overlay {
+  width: 100%; }
+
+.text {
+  white-space: nowrap;
+  color: #060606;
+  /*color: white;*/
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.buyers {
+  background: #000;
+  padding: 15px;
+  border-top: 9px solid #D0B144; }
+
+.buyers2 h2 {
+  text-transform: uppercase;
+  font-size: 2.0em;
+  text-align: center;
+  margin-top: -10px; }
+
+/*----*/
+/*
+.botao{
+	color: $cor1;
+	font-weight: 700;
+	border: 2px solid $cor1;
+	font-size: 2.6rem;
+}
+.efeito{
+	color: $cor1;
+	padding: 30px;
+	margin: 10px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all 100ms ease;
+}
+.efeito-1:before{
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+width:100%;
+height: 0px;
+background: $cor1;
+transition: all 0.3s ease;
+}
+.efeito-1:hover:before{
+	height: 100%;
+}*/
+/*.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.text h3 {
+    white-space: nowrap;
+    color: $cor1;
+    *font-size: 20px;
+    margin-bottom: -0.2rem;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.con {
+	position: relative;
+	width: 100%;
+}
+.con:hover .overlay {
+  width: 100%;
+}*/
+.caixa {
+  /*background: $cor1;*/
+  margin-top: -153px;
+  /*width: 20.8125rem;*/
+  /*border-radius: 4px;*/ }
+
+.categoria {
+  color: #fff;
+  padding: 15px;
+  bottom:3rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.especifico a {
+  color: #404040; }
+
+.especifico ul {
+  list-style: none;
+  text-transform: uppercase;
+  text-indent: 0px;
+  padding-bottom: 20px;
+  padding-right: 8px; }
+
+.especifico ul a:hover {
+  background: #d4eada;
+  color: #000;
+  text-decoration: none;
+  display: block; }
+
+.especifico li {
+  padding: 3px 7px;
+  text-align: left;
+  border-bottom: 1px solid #398485;
+  font-size: 1rem; }
+
+.titulo-destaque {
+  font-weight: 500;
+  color: #398485;
+  font-size: 2.6em; }
+
+.nav-link {
+  font-size: 1.3rem;
+  text-transform: uppercase; }
+
+.dropdown-item {
+  color: #398485;
+  text-transform: uppercase; }
+
+.dropdown-item:hover {
+  background: #d4eada; }
+
+.dropdown-item:active {
+  color: #398485; }
+
+.dropdown-menu {
+  margin-top: 20px;
+  border-radius: 0;
+  border: none;
+  background: #f8f9fa; }
+
+.nav-link:hover {
+  background: #d4eada; }
+
+.title-noticia {
+  font-weight: 300;
+  line-height: 1;
+  font-size: 1.5rem; }
+
+.mais {
+  position: absolute;
+  right: 18px;
+  color: #606060;
+  text-align: right;
+  bottom: 6px; }
+
+.mais:hover {
+  color: #398485; }
+
+.destaque a {
+  color: #404040;
+  text-decoration: none; }
+
+.destaque a:hover {
+  color: #707070; }
+
+.barra {
+  border-bottom: 6px solid #398485; }
+
+/*subconteudo*/
+.subconteudo img {
+  margin: 0.5rem; }
+
+/*rodape*/
+.rodape {
+  background: #08486B; }
+
+.rodape a {
+  color: #fff; }
+
+.rodape a:hover {
+  color: #d4eada;
+  text-decoration: none; }
+
+.linha {
+  border-left: 1px solid #cbcbcb;
+  padding-right: 20px; }
+
+/*lista expositor*/
+.subconteudo a {
+  color: #398485;
+  text-decoration: none; }
+
+.subconteudo a:hover {
+  color: #08486B; }
+
+.subconteudo strong {
+  font-weight: 500; }
+
+.projetos {
+    border: 1px solid #5f5f5f;
+    /* padding: 8px; */
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.elemento img {
+      margin-right: 10px;
+    }
+    @keyframes slidein {
+      from {
+        margin-left: 90%;
+      }
+      to{
+        margin-left: -220%;
+      }
+    }
+    .elemento .std-logos-ticker{    
+      overflow: visible;    
+      width: auto
+    }
+    .elemento li:hover{
+      animation-play-state: paused;
+      cursor: pointer;
+    } 
+    .projetos {
+      border-radius: 12px;
+      min-height: 307px;
+    }
+
+    /*widgets*/
+    .categories {
+      background: gray;
+      padding: 12px;
+      list-style: none;
+    }
+    .categories ul{
+      list-style: none;
+    }
+    /*/widgets*/
