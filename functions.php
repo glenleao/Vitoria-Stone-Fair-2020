@@ -1,6 +1,9 @@
 <?php
 
 //verifica se o ABSPATH está definido
+
+
+
 // Chamar a tag Title e adicionar os formatos de posts
 function bs4wp_theme_support() {
 
@@ -35,7 +38,7 @@ register_nav_menus( array(
 
 // Definir as miniaturas dos posts
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 1280, 720, true );
+set_post_thumbnail_size( 1900, 720, true );
 
 // Definir o tamanho o resumo
 add_filter( 'excerpt_length', function($length) {

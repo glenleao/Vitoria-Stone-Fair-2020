@@ -1,11 +1,9 @@
 <?php get_header(); ?>
 
 <!-- carousel -->
-      <div class="row">
       
-        <div class="col mb-5">
-        
-          <div id="carouselBSWP" class="carousel slide" data-ride="carousel">
+         
+          <div id="carouselBSWP" class="carousel slide d-none d-sm-block" data-ride="carousel">
           
             <div class="carousel-inner">
             
@@ -54,14 +52,14 @@
           
           </div>
         
-        </div>
+
       
-      </div>
+
       <!-- /carousel -->
 
       <!-- mobile -->
     <div class="bg-img d-block d-sm-none">
-    <img  class="w-100" src="<?php bloginfo('template_url');?>/savedate-mob.jpg">
+    <img  class="w-100" src="<?php bloginfo('template_url');?>/img/savedate-mob.jpg">
   </div>
   <!-- /mobile -->
 <!-- botoes -->
