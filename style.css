@@ -10,7 +10,19 @@ Text Domain: vsf2020
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: 300; }
-
+/*alterando pagina login*/
+.login h1 a {
+background-image: url('../login/logo.png');
+background-size: 250px 150px;
+width: 250px;
+height: 150px;
+}
+body.login {
+background: #f2f2f2;
+background-image: url('../login/mapa.png');
+background-repeat: no-repeat;
+}
+/*/alterando pagina login*/
 .topo {
   margin-top: 0;
   height: 40px;

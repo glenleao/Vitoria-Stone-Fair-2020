@@ -1,7 +1,80 @@
 <?php
 
-//verifica se o ABSPATH está definido
+//pagina login personalizada
+function custom_login_css() {
+echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/style.css"/>';
+}
+add_action('login_head', 'custom_login_css');
 
+/*Função que altera a URL, trocando pelo endereço do seu site*/
+function my_login_logo_url() {
+return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+ 
+/*Função que adiciona o nome do seu site, no momento que o mouse passa por cima da logo*/
+function my_login_logo_url_title() {
+return 'Vitoria Stone Fair 2020 - Voltar para Home';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+ 
+
+
+
+//CRUD create emersonbroga.com
+function newsletter_insert( $dados )
+{
+  global $wpdb;
+  
+  $array = array();
+  $array['nome'] = $dados['nome'];
+  $array['email'] = $dados['email'];
+  
+  $format = array(); // possíveis formatos %s (string), %d (decimal) e %f (float). 
+  $format['nome'] = '%s';
+  $format['email'] = '%s';
+  
+  $wpdb->insert( 'newsletter', $array , $format);
+  // tabela, dados, formato.
+}
+
+//CRUD Delete emersonbroga.com
+function newsletter_delete( $id )
+{
+  global $wpdb; 
+  
+  $wpdb->query("DELETE FROM 'newsletter' WHERE ID = $id");
+}
+
+//CRUD READ emersonbroga.com
+function newsletter_fetch_rows( )
+{
+  global $wpdb; 
+  
+  $query = 'SELECT * FROM newsletter';
+  
+  return $wpdb->get_results($query, "ARRAY_A");
+  // Os possíveis tipos de retorno do get results são "ARRAY_A", "ARRAY_N", "OBJECT", "OBJECT_K" 
+}
+// CRUD UPDATE
+function newsletter_update( $id , $dados  )
+{
+  global $wpdb;
+  
+  $array = array();
+  $array['nome'] = $dados['nome'];
+  $array['email'] = $dados['email'];
+  
+  $format = array(); // possíveis formatos %s (string), %d (decimal) e %f (float). 
+  $format['nome'] = '%s';
+  $format['email'] = '%s';
+  
+  $where = array( 'ID' => $id );
+  $where_format = array( 'ID' => '%d');
+  
+  $wpdb->update( 'newsletter', $array , $format, $where, $where_format );
+  // tabela, dados, formato, onde, formato onde.
+}
 
 
 // Chamar a tag Title e adicionar os formatos de posts

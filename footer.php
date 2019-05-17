@@ -51,6 +51,7 @@ $(document).ready(function(){
     <script src="<?php bloginfo('template_url') ?>/js/jquery.js"></script>
     <script src="<?php bloginfo('template_url') ?>/js/popper.js"></script>
     <script src="<?php bloginfo('template_url') ?>/js/lightbox-plus-jquery.min.js"></script>
+    <script src="<?php bloginfo('template_url') ?>/js/iframe.js"></script>
     <script src="https://vitoriastonefair.com.br/__engine/extra/spaw2/uploads/files/scripts/js/bootstrap.js"></script>
     <script src="https://vitoriastonefair.com.br/__engine/extra/spaw2/uploads/files/scripts/js/slidein-images.js"></script>
 
