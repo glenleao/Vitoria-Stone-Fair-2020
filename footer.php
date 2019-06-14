@@ -50,10 +50,11 @@ $(document).ready(function(){
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php bloginfo('template_url') ?>/js/jquery.js"></script>
     <script src="<?php bloginfo('template_url') ?>/js/popper.js"></script>
+    <script src="<?php bloginfo('template_url') ?>/js/bootstrap.js"></script>
     <script src="<?php bloginfo('template_url') ?>/js/lightbox-plus-jquery.min.js"></script>
     <script src="<?php bloginfo('template_url') ?>/js/iframe.js"></script>
-    <script src="https://vitoriastonefair.com.br/__engine/extra/spaw2/uploads/files/scripts/js/bootstrap.js"></script>
-    <script src="https://vitoriastonefair.com.br/__engine/extra/spaw2/uploads/files/scripts/js/slidein-images.js"></script>
+<!--     <script src="https://vitoriastonefair.com.br/__engine/extra/spaw2/uploads/files/scripts/js/bootstrap.js"></script>
+ -->    <script src="https://vitoriastonefair.com.br/__engine/extra/spaw2/uploads/files/scripts/js/slidein-images.js"></script>
 
     <script src="https://optin.entregaemails.com.br/accounts/48845/forms/3" type="text/javascript" charset="utf-8" async defer></script>
     <!-- Marcação JSON-LD gerada pelo Assistente de marcação para dados estruturados do Google. -->

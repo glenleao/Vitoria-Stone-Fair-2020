@@ -6,11 +6,11 @@
             
         <?php the_content(); ?>
 
-        <p class="text-muted">Publicado em: <span class="badge badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
+        <p class="text-muted">Pagina noticia Publicado em: <span class="badge badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
 
         <hr>
 
-        <?php comments_template(); ?>
+
 
 <?php else : ?>
 
@@ -26,7 +26,7 @@
                 <?php the_excerpt(); ?>
               </div>
             </div>
-            <p class="text-muted">Publicado em: <span class="badge badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
+            <p class="text-muted">identificando pag Publicado em: <span class="badge badge-my-color-4"><?php echo get_the_date('d/m/y'); ?></span></p>
         </div>
 
 <?php endif; ?>

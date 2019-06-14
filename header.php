@@ -9,36 +9,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>/css/lightbox.min.css">
-
-    <style type="text/css">
-      .elemento img {
-      margin-right: 10px;
-    }
-    @keyframes slidein {
-      from {
-        margin-left: 90%;
-      }
-      to{
-        margin-left: -220%;
-      }
-    }
-    .elemento .std-logos-ticker{    
-      overflow: visible;    
-      width: auto
-    }
-    .elemento li:hover{
-      animation-play-state: paused;
-      cursor: pointer;
-    } 
-    .projetos {
-      border-radius: 12px;
-      min-height: 307px;
-    }
-
-    </style>
 
     <?php wp_head(); ?>
 

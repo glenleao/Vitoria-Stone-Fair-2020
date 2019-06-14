@@ -161,7 +161,7 @@
 
           <div class=" destaque col-sm-12 col-md-4 mb-5">
 
-            <div class="card">
+            <div class="">
               <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-fluid barra card-img-top mb-3')) ?>
               <div class="card-body">
                 <h2 class="title-noticia">
