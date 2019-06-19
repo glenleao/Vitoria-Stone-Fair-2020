@@ -10,11 +10,11 @@
             <a href="http://www.milanezmilaneze.com.br" alt="Milanez & Milaneze" target="_blank">www.milanezmilaneze.com.br</a></p>
  
       </div>
-      <div class="col-md-3 social-2 linha">
-          <p>Para receber as novidades da Vitoria Stone Fair, preencha os campos ao lado:</p>
-            <div id="opt_3"></div>
+      <div class="col-md-4 social-2 linha">
+          <p>Para receber as novidades da Vitoria Stone Fair, preencha os campos:</p>
+            <div id="opt_3" style="height: 230px;"></div>
       </div>
-      <div class="col-md-3 social-2 text-right">
+      <div class="col-md-2 social-2 text-right">
         <ul>
           <li>
             <a href="https://www.instagram.com/vitoriastonefair/" target="_blank" data-toggle="tooltip"  data-placement="bottom" title="Follow us on Instagram" ><i class="fab fa-2x fa-instagram" aria-hidden="true"></i></a>
@@ -44,6 +44,7 @@ $(document).ready(function(){
   });
 });  
 </script>
+
 
 
     <!-- Optional JavaScript -->

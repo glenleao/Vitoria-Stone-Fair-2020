@@ -9,7 +9,14 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-sm-12">
+            <div class="col-md-3 col-sm-12">
+                <!--Sidebar-->
+                <?php if ( is_active_sidebar( 'expositor' ) ) : ?>
+                <?php dynamic_sidebar( 'expositor' ); ?>
+                <?php endif; ?>
+                <!--/.expositor-->
+            </div> 
+            <div class="col-md-9 col-sm-12">
                 <?php custom_breadcrumbs(); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>  
                     <div class=" titulo-destaque mb-3"><?php the_title(); ?></div>
@@ -19,9 +26,6 @@
                 <?php endwhile; ?>
 
                 <?php else : get_404_template();  endif; ?>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <?php get_sidebar(); ?> 
             </div>
         </div>
     </div>

@@ -11,10 +11,10 @@
         <div class="row">
             <div class="col-md-3 col-sm-12">
                 <!--Sidebar-->
-    <?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
-    <?php dynamic_sidebar( 'sidebar' ); ?>
-    <?php endif; ?>
-<!--/.Sidebar-->
+                <?php if ( is_active_sidebar( 'visitante' ) ) : ?>
+                <?php dynamic_sidebar( 'visitante' ); ?>
+                <?php endif; ?>
+                <!--/.Sidebar-->
             </div> 
             <div class="col-md-9 col-sm-12">
                 <?php custom_breadcrumbs(); ?>

@@ -311,16 +311,100 @@ function posts_link_attributes() {
     return 'class="btn btn-outline-my-color-5"';
 }
 
-// Criar a barra lateral
-register_sidebar(
-    array(
-        'name' => 'Barra lateral',
-        'id' => 'sidebar',
-        'before_widget' => '<div class=" mb-4">',
-        'after_widget' => '</div></div>',   
-        'before_title' => '<h2 class="">',
-        'after_title' => '</h2><div class="menu">',
-));
+// Criar menu categoria
+/* Add Multiple sidebar 
+*/
+if ( function_exists('register_sidebar') ) {
+    $sidebar1 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu a feira', 'textdomain' ),
+        'id' => 'feira',   
+    );  
+    $sidebar2 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu visitante', 'textdomain' ),
+        'id' => 'visitante',   
+    );
+    $sidebar3 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu expositor', 'textdomain' ), 
+        'id' => 'expositor', 
+    );
+    $sidebar4 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu imprensa', 'textdomain' ),
+        'id' => 'imprensa',   
+    );
+     $sidebar5 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu feira en', 'textdomain' ),
+        'id' => 'feira_en',   
+    );
+     $sidebar6 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu expositor en', 'textdomain' ),
+        'id' => 'expositor_en',   
+    );
+     $sidebar7 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu visitante en', 'textdomain' ),
+        'id' => 'vistante_en',   
+    );
+     $sidebar8 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'Menu imprensa en', 'textdomain' ),
+        'id' => 'imprensa_en',   
+    );
+     $sidebar9 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'My sidebar 9', 'textdomain' ),  
+    );
+     $sidebar10 = array(
+        'before_widget' => '<div class="mb-4">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h2 class="" style="display:none;">',
+        'after_title' => '</h2><div class="menu">',        
+        'name'=>__( 'My sidebar 10', 'textdomain' ),  
+    );
+     
+    register_sidebar($sidebar1);
+    register_sidebar($sidebar2);
+    register_sidebar($sidebar3);
+    register_sidebar($sidebar4);
+    register_sidebar($sidebar5);
+    register_sidebar($sidebar6);
+    register_sidebar($sidebar7);
+    register_sidebar($sidebar8);
+    register_sidebar($sidebar9);
+    register_sidebar($sidebar10);
+}
 
 // Criar o campo de busca
 register_sidebar(

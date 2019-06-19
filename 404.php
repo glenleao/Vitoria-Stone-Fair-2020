@@ -8,8 +8,6 @@
           		<p>Esperimente realizar uma busca para encontrar o conteúdo que deseja.</p>
         	</div>
 
-        <?php get_sidebar(); ?>
-
     	</div>
     </div>
 

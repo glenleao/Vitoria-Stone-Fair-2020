@@ -1,3 +1,4 @@
+<!-- Pagina principal - Home -->
 <?php get_header(); ?>
 
 <!-- carousel -->

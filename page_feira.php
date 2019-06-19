@@ -7,22 +7,27 @@
                 </div>
             </div>
     </div>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-sm-12">
-                <?php custom_breadcrumbs(); ?>
-                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>  
-                    <div class=" titulo-destaque mb-3"><?php the_title(); ?></div>
-                    
-                    <?php the_content(); ?>
-
-                <?php endwhile; ?>
-
-                <?php else : get_404_template();  endif; ?>
+            <div class="col-md-3 col-sm-12">
+                <!--Sidebar-->
+                <?php if ( is_active_sidebar( 'feira' ) ) : ?>
+                <?php dynamic_sidebar( 'feira' ); ?>
+                <?php endif; ?>
+                <!--/.Sidebar-->
             </div>
-            <div class="col-md-4 col-sm-12">
-                <?php get_sidebar(); ?> 
-            </div>      
+
+            <div class="col-md-9 col-sm-12">
+                <div class="subconteudo">
+                    <?php custom_breadcrumbs(); ?>
+                    <?php if(have_posts()) : while(have_posts()) : the_post(); ?>  
+                    <div class="titulo mb-3"><?php the_title(); ?></div>
+                    <?php the_content(); ?>
+                    <?php endwhile; ?>
+                    <?php else : get_404_template();  endif; ?>
+                </div>                
+            </div>
         </div>
     </div>
 <?php get_footer(); ?>
